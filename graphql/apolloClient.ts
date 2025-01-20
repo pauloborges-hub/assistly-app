@@ -10,6 +10,31 @@ export const BASE_URL =
       ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
       : "http://localhost:3000";
 
+// Creates a Proxy HTTP Link to avoid exposing keys on the client-side 
 const httpLink = createHttpLink({
    uri: `${BASE_URL}/api/graphql`
 });
+
+// Disable caching mechaninsms on ApolloClient
+const defaultOptions: DefaultOptions = {
+   watchQuery: {
+      fetchPolicy: "no-cache",
+      errorPolicy: "all"
+   },
+   query: {
+      fetchPolicy: "no-cache",
+      errorPolicy: "all"
+   },
+   mutate: {
+      fetchPolicy: "no-cache",
+      errorPolicy: "all"
+   }
+}
+
+const client = new ApolloClient({
+   link: httpLink,
+   cache: new InMemoryCache(),
+   defaultOptions: defaultOptions
+});
+
+export default client;
