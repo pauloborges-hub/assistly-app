@@ -3,9 +3,9 @@ import { gql } from "@apollo/client";
 import { NextRequest, NextResponse } from "next/server";
 
 const corsHeaders = {
-   "Acess-Control-Allow-Origin": "*",
-   "Acess-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-   "Acess-Control-Allow-Headers": "Content-Type, Authorization"
+   "Access-Control-Allow-Origin": "*",
+   "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+   "Access-Control-Allow-Headers": "Content-Type, Authorization"
 };
 
 export async function POST(request: NextRequest) {
@@ -29,6 +29,7 @@ export async function POST(request: NextRequest) {
       }
 
       const data = result.data;
+      console.log("DATA >>>", data);
 
       return NextResponse.json(
          { data },

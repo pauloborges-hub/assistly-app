@@ -13,12 +13,15 @@ function CreateChatbot() {
    const { user } = useUser();
    const [name, setName] = useState("");
    const router = useRouter();
-   const [createChatbot, { data, loading, error }] = useMutation(CREATE_CHATBOT, {
-      variables: {
-         clerk_user_id: user?.id,
-         name
+   const [createChatbot, { data, loading, error }] = useMutation(
+      CREATE_CHATBOT,
+      {
+         variables: {
+            clerk_user_id: user?.id,
+            name
+         }
       }
-   });
+   );
 
    async function handleSubmit(e: FormEvent) {
       e.preventDefault();
