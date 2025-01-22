@@ -13,15 +13,23 @@ function CreateChatbot() {
    const { user } = useUser();
    const [name, setName] = useState("");
    const router = useRouter();
-   const [createChatbot, { data, loading, error }] = useMutation(
-      CREATE_CHATBOT,
-      {
-         variables: {
-            clerk_user_id: user?.id,
-            name
-         }
+   // const [createChatbot, { data, loading, error }] = useMutation(
+   //    CREATE_CHATBOT,
+   //    {
+   //       variables: {
+   //          clerk_user_id: user?.id,
+   //          name
+   //       }
+   //    }
+   // );
+   const [createChatbot, { data, loading, error }] = useMutation(CREATE_CHATBOT, {
+      variables: {
+         clerk_user_id: user?.id,
+         name,
+         created_at: new Date().toISOString()  // Adicionando o campo created_at com a data atual
       }
-   );
+   });
+   
 
    async function handleSubmit(e: FormEvent) {
       e.preventDefault();
@@ -49,7 +57,10 @@ function CreateChatbot() {
             <h2 className="font-light">
                Create a new chatbot to assist you in your conversations with your customers.
             </h2>
-            <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-2 mt-5">
+            <form 
+               onSubmit={handleSubmit} 
+               className="flex flex-col md:flex-row gap-2 mt-5"
+            >
                <Input
                   type="text"
                   value={name}
