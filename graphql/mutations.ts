@@ -15,8 +15,8 @@ export const CREATE_CHATBOT = gql`
       $created_at: DateTime!
    ) {
       insertChatbots(
-         clerk_user_id: $clerk_user_id
-         name: $name
+         clerk_user_id: $clerk_user_id,
+         name: $name,
          created_at: $created_at
       ) {
          id
@@ -66,6 +66,41 @@ export const UPDATE_CHATBOT = gql`
          id
          name
          created_at
+      }
+   }
+`;
+
+export const INSERT_MESSAGE = gql`
+   mutation InsertMessage(
+      $chat_session_id: Int!
+      $content: String!
+      $sender: String!
+   ) {
+      insertMessages(
+         chat_session_id: $chat_session_id,
+         content: $content,
+         sender: $sender
+      ) {
+         id
+         content
+         created_at
+         sender
+      }
+   }
+`;
+
+export const INSERT_GUEST = gql`
+   mutation insertGuest($name: String!, $email: String!) {
+      insertGuests(name: $name, email: $email) {
+         id
+      }
+   }
+`;
+
+export const INSERT_CHAT_SESSION = gql`
+   mutation InsertChatSession($chatbot_id: Int!, $guest_id: Int!) {
+      insertChat_sessions(chatbot_id: $chatbot_id, guest_id: $guest_id) {
+         id
       }
    }
 `;
