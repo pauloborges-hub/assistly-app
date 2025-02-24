@@ -1,9 +1,6 @@
 
 # Assistly App
 
-**Repository:** [assistly-app](https://github.com/pauloborges-hub/assistly-app)  
-**Author:** pauloborges-hub
-
 ## 📄 Overview  
 The `assistly-app` repository is a web application project built with **Next.js**. In this project I used advanced tools like GraphQL and StepZen, and utilizing Tailwind CSS for efficient styling.
 
@@ -47,7 +44,7 @@ npm run dev
 
 The application will be accessible at `http://localhost:3000/` by default.
 
-## ✨ Notable Features  
+## ✨ Features  
 
 - **GraphQL Integration:** Utilizes GraphQL for efficient data retrieval, enabling the application to request only the necessary data.  
 
@@ -56,6 +53,3 @@ The application will be accessible at `http://localhost:3000/` by default.
 - **Tailwind CSS for Styling:** Employs Tailwind CSS, allowing for rapid and consistent UI development with utility-first CSS classes.  
 
 - **TypeScript Support:** The inclusion of TypeScript enhances code quality and maintainability by providing static type checking.  
-
-## 🏁 Conclusion  
-This repository serves as a comprehensive example of building a modern web application with Next.js, integrating advanced tools like GraphQL and StepZen, and utilizing Tailwind CSS for efficient styling.
