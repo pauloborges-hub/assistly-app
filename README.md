@@ -1,8 +1,14 @@
 
 # Assistly App
 
+
 ## 📄 Overview  
-The `assistly-app` repository is a web application project built with **Next.js**. In this project I used advanced tools like GraphQL and StepZen, and utilizing Tailwind CSS for efficient styling.
+The `assistly-app` repository is a web application project built with **Next.js**, it consists in a SAAS AI Agents App, with full customization for the AI Agents and real-time chat.
+In this project I used advanced tools like GraphQL and StepZen, and utilizing Tailwind CSS for efficient styling.
+
+![image](https://github.com/user-attachments/assets/cedef1fe-6aeb-4f55-af87-f16985faa807)
+![image](https://github.com/user-attachments/assets/e76d041a-3fd8-4060-92f4-9db91d035813)
+![image](https://github.com/user-attachments/assets/861baa23-3b86-4e58-a303-fa5e4bb0ce4d)
 
 ## 📂 Project Structure  
 
@@ -54,5 +60,6 @@ The application will be accessible at `http://localhost:3000/` by default.
 
 - **TypeScript Support:** The inclusion of TypeScript enhances code quality and maintainability by providing static type checking.
 
-![image](https://github.com/user-attachments/assets/cedef1fe-6aeb-4f55-af87-f16985faa807)
+
+
 
