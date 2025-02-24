@@ -52,4 +52,7 @@ The application will be accessible at `http://localhost:3000/` by default.
 
 - **Tailwind CSS for Styling:** Employs Tailwind CSS, allowing for rapid and consistent UI development with utility-first CSS classes.  
 
-- **TypeScript Support:** The inclusion of TypeScript enhances code quality and maintainability by providing static type checking.  
+- **TypeScript Support:** The inclusion of TypeScript enhances code quality and maintainability by providing static type checking.
+
+  ![image](https://github.com/user-attachments/assets/cedef1fe-6aeb-4f55-af87-f16985faa807)
+
