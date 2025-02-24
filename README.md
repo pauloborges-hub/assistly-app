@@ -54,5 +54,5 @@ The application will be accessible at `http://localhost:3000/` by default.
 
 - **TypeScript Support:** The inclusion of TypeScript enhances code quality and maintainability by providing static type checking.
 
-  ![image](https://github.com/user-attachments/assets/cedef1fe-6aeb-4f55-af87-f16985faa807)
+![image](https://github.com/user-attachments/assets/cedef1fe-6aeb-4f55-af87-f16985faa807)
 
