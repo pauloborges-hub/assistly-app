@@ -3,11 +3,11 @@ Assistly App
 Repository: assistly-app
 Author: pauloborges-hub
 
-Overview
+📄 Overview
 
 The assistly-app repository is a web application project built with Next.js, a popular React-based framework. The project is initialized using create-next-app, providing a robust foundation for server-rendered React applications.
 
-Project Structure
+📂 Project Structure
 
 app/ Directory: Contains the main application components and pages. The entry point is app/page.tsx, which serves as the homepage.
 
@@ -23,7 +23,7 @@ stepzen/ Directory: Contains configuration and schema files for StepZen, a platf
 
 types/ Directory: Defines TypeScript types and interfaces, ensuring type safety and enhancing code reliability.
 
-Key Configuration Files
+🔧 Key Configuration Files
 
 next.config.ts: The Next.js configuration file where custom settings and plugins are defined to modify the default build and runtime behavior.
 
@@ -33,15 +33,19 @@ stepzen.config.json: Configuration file for StepZen, detailing the setup for con
 
 package.json: Lists the project's dependencies, scripts, and metadata. Notable dependencies include Next.js, React, Tailwind CSS, and StepZen, among others.
 
-Setup and Development
+🚀 Setup and Development
 
 To set up the development environment:
 
-Install Dependencies: Run npm install to install all necessary packages.
+# Install Dependencies
+npm install
 
-Start Development Server: Execute npm run dev to launch the development server. By default, the application will be accessible at http://localhost:3000/.
+# Start Development Server
+npm run dev
 
-Notable Features
+The application will be accessible at http://localhost:3000/ by default.
+
+✨ Notable Features
 
 GraphQL Integration: Utilizes GraphQL for efficient data retrieval, enabling the application to request only the necessary data.
 
@@ -51,7 +55,7 @@ Tailwind CSS for Styling: Employs Tailwind CSS, allowing for rapid and consisten
 
 TypeScript Support: The inclusion of TypeScript enhances code quality and maintainability by providing static type checking.
 
-Conclusion
+🏁 Conclusion
 
 This repository serves as a comprehensive example of building a modern web application with Next.js, integrating advanced tools like GraphQL and StepZen, and utilizing Tailwind CSS for efficient styling.
 
