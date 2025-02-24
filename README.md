@@ -5,7 +5,7 @@
 **Author:** pauloborges-hub
 
 ## 📄 Overview  
-The `assistly-app` repository is a web application project built with **Next.js**, a popular React-based framework. The project is initialized using `create-next-app`, providing a robust foundation for server-rendered React applications.
+The `assistly-app` repository is a web application project built with **Next.js**. In this project I used advanced tools like GraphQL and StepZen, and utilizing Tailwind CSS for efficient styling.
 
 ## 📂 Project Structure  
 
